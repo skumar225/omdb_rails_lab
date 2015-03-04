@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OMDB</title>
+</head>
+<body>
+
+<h1>Search for a Movie</h1>
+  
+<%= form_tag("/movies/search", method: "get") do %>
+  <%= label_tag(:movies, "Search for:") %>
+  <%= text_field_tag(:movies) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<ul>
+<!--   < % @movieresult.each do |movie| %>
+  <li>< %= movie["Title"] %>  - <  %= movie["Year"] %></li>
+  < % end %> -->
+</ul>
+
+</body>
+</html>
